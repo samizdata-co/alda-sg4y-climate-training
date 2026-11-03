@@ -10,7 +10,7 @@ The training is planned for **early November 2026** and will focus on practical 
 
 In addition, we would be pleased to explore your contribution to the project’s **Digital Guideline**, a practical resource for municipal authorities across the Black Sea Basin. The guideline will cover topics such as:effective communication and engagement with young people;digital tools for participatory decision-making;tools and approaches for collecting relevant data and evidence;mechanisms and digital tools for requesting and accessing public information and data;good practices and practical examples of youth engagement;relevant digital solutions supporting climate governance.The guideline is being developed jointly by experts from INU and ALDA, with contributions from the project partners, and is planned to be **finalised by December 2026**.
 
-You can find more information about the project here: [SG4Y-CLIMATE project website](https://smartgovernance4youth.org/en?utm_source=chatgpt.com)
+You can find more information about the project here: [SG4Y-CLIMATE project website](https://smartgovernance4youth.org/en)
 
 ## Call notes
 
@@ -20,11 +20,11 @@ Nu avem date concrete, dar e de obicei sâmbătă. Probabil 31 octombrie sau 7 n
 
 Training-ul durează în jur de 2,5 ore.
 
+Training-ul va fi online.
+
 ### Participanți
 
 Până la 30 de tineri de 18-29 ani, din Moldova, România și Turcia (bazinul Mării Negre). Câte 10 din fiecare țară. Sunt studenți, doctori, angajați din sectorul public, consilii raionale/locale.
-
-Training-ul va fi online.
 
 ### Scop
 
@@ -41,6 +41,8 @@ Vorbim despre instrumente deja existente. Cum colectăm date despre climă, cum 
 Atelierul trebuie să fie practic (ex. exerciții) și să implice și provoace cât mai mult tinerii.
 
 Putem oferi teme pentru acasă, de exemplu, crearea unui articol/cercetări simple care pot fi publicate pe site-ul proiectului.
+
+De asemenea, putem trimite un chestionar înainte de conferință pentru a afla interesele participanților sau să le cerem să pregătească anumite idei.
 
 ### Ghid
 

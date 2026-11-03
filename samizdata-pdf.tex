@@ -6,17 +6,17 @@
 \usepackage[automark]{scrlayer-scrpage}
 
 \setmainfont{Work Sans}[
-  Path=fonts/,
+  Path=../fonts/,
   UprightFont=WorkSans-Variable.ttf,
   ItalicFont=WorkSans-Italic-Variable.ttf
 ]
 \setsansfont{Work Sans}[
-  Path=fonts/,
+  Path=../fonts/,
   UprightFont=WorkSans-Variable.ttf,
   ItalicFont=WorkSans-Italic-Variable.ttf
 ]
 \newfontfamily\samizdatadisplay{Space Grotesk}[
-  Path=fonts/,
+  Path=../fonts/,
   UprightFont=SpaceGrotesk-Variable.ttf
 ]
 
@@ -30,7 +30,7 @@
 \pagecolor{samizdatabg}
 
 \clearpairofpagestyles
-\ihead{\IfFileExists{_extensions/samizdata-co/samizdata/assets/logos/mark.pdf}{\includegraphics[height=0.7cm]{_extensions/samizdata-co/samizdata/assets/logos/mark.pdf}}{\samizdatadisplay\bfseries\textcolor{samizdatainfo}{SAMIZDATA}}}
+\AtBeginDocument{\ifdefined\nosamizdatabanner\else\ihead{\IfFileExists{_extensions/samizdata-co/samizdata/assets/logos/mark.pdf}{\includegraphics[height=0.7cm]{_extensions/samizdata-co/samizdata/assets/logos/mark.pdf}}{\samizdatadisplay\bfseries\textcolor{samizdatainfo}{SAMIZDATA}}}\fi}
 \ohead{\small\color{samizdatainfo}\headmark}
 \cfoot{\small\color{samizdatainfo}\pagemark}
 \setlength{\headheight}{24pt}
