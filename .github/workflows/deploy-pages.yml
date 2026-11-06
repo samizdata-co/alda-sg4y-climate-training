@@ -1,0 +1,41 @@
+name: Deploy presentation to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: quarto-dev/quarto-actions/setup@v2
+      - uses: actions/configure-pages@v5
+      - name: Render presentation
+        run: quarto render docs/presentation.md
+      - name: Assemble site
+        run: |
+          mkdir -p site/docs site/_extensions/samizdata-co/samizdata/assets/logos
+          cp -r output/docs/presentation.html output/docs/presentation_files site/docs/
+          cp -r output/docs/media site/docs/media
+          cp _extensions/samizdata-co/samizdata/assets/logos/mark.svg site/_extensions/samizdata-co/samizdata/assets/logos/
+          printf '<!doctype html><meta http-equiv="refresh" content="0; url=docs/presentation.html"><a href="docs/presentation.html">Open presentation</a>\n' > site/index.html
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
