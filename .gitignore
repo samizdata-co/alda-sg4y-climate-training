@@ -256,3 +256,4 @@ cython_debug/
 
 # Quarto multiplex speaker view (contains the multiplex secret)
 docs/presentation-speaker.html
+output/docs/presentation-speaker.html

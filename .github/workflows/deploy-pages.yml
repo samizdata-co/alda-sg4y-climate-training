@@ -29,7 +29,7 @@ jobs:
       - name: Assemble site
         run: |
           mkdir -p site/docs site/_extensions/samizdata-co/samizdata/assets/logos
-          cp -r output/docs/presentation.html output/docs/presentation_files site/docs/
+          cp -r output/docs/presentation.html output/docs/presentation-speaker.html output/docs/presentation_files site/docs/
           cp -r output/docs/media site/docs/media
           cp _extensions/samizdata-co/samizdata/assets/logos/mark.svg site/_extensions/samizdata-co/samizdata/assets/logos/
           printf '<!doctype html><meta http-equiv="refresh" content="0; url=docs/presentation.html"><a href="docs/presentation.html">Open presentation</a>\n' > site/index.html
