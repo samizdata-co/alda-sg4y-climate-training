@@ -1,6 +1,8 @@
 project:
   output-dir: output
   execute-dir: project
+  post-render:
+    - ./post-render.sh
 
 # The pinned extension in _extensions/samizdata-co/samizdata supplies the brand.
 execute:
